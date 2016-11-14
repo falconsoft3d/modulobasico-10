@@ -1,0 +1,59 @@
+<openerp>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="modulobasico.list">
+      <field name="name">modulobasico list</field>
+      <field name="model">modulobasico.modulobasico</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="modulobasico.action_window">
+      <field name="name">modulobasico window</field>
+      <field name="res_model">modulobasico.modulobasico</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="modulobasico.action_server">
+      <field name="name">modulobasico server</field>
+      <field name="model_id" ref="model_modulobasico_modulobasico"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="modulobasico" id="modulobasico.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="modulobasico.menu_1" parent="modulobasico.menu_root"/>
+    <menuitem name="Menu 2" id="modulobasico.menu_2" parent="modulobasico.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="modulobasico.menu_1_list" parent="modulobasico.menu_1"
+              action="modulobasico.action_window"/>
+    <menuitem name="Server to list" id="modulobasico" parent="modulobasico.menu_2"
+              action="modulobasico.action_server"/>
+    -->
+  </data>
+</openerp>
